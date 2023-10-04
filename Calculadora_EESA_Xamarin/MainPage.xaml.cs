@@ -14,5 +14,10 @@ namespace Calculadora_EESA_Xamarin
         {
             InitializeComponent();
         }
+
+        private void Button_SizeChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
