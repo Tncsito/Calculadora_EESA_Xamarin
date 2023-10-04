@@ -23,23 +23,24 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Text="1" Grid.Row="0" Grid.Column="0" TextColor="White" BackgroundColor="#272727" FontSize="36" Name="1"/>
-            <Button Text="2" Grid.Row="0" Grid.Column="1" TextColor="White" BackgroundColor="#272727" FontSize="36" Name="2"/>
-            <Button Text="3" Grid.Row="0" Grid.Column="2" TextColor="White" BackgroundColor="#272727" FontSize="36" Name="3"/>
-            <Button Text="4" Grid.Row="1" Grid.Column="0" TextColor="White" BackgroundColor="#272727" FontSize="36" Name="4"/>
-            <Button Text="5" Grid.Row="1" Grid.Column="1" TextColor="White" BackgroundColor="#272727" FontSize="36" Name="5"/>
-            <Button Text="6" Grid.Row="1" Grid.Column="2" TextColor="White" BackgroundColor="#272727" FontSize="36" Name="6"/>
-            <Button Text="7" Grid.Row="2" Grid.Column="0" TextColor="White" BackgroundColor="#272727" FontSize="36" Name="7"/>
-            <Button Text="8" Grid.Row="2" Grid.Column="1" TextColor="White" BackgroundColor="#272727" FontSize="36" Name="8"/>
-            <Button Text="9" Grid.Row="2" Grid.Column="2" TextColor="White" BackgroundColor="#272727" FontSize="36" Name="9"/>
-            <Button Text="0" Grid.Row="3" Grid.Column="0" TextColor="White" BackgroundColor="#272727" FontSize="36" Name="0"/>
-            <Button Text="00" Grid.Row="3" Grid.Column="1" TextColor="White" BackgroundColor="#272727" FontSize="36" Name="00"/>
-            <Button Text="." Grid.Row="3" Grid.Column="2" TextColor="White" BackgroundColor="#272727" FontSize="36" Name="."/>
-            <Button Text="/" Grid.Row="0" Grid.Column="4" TextColor="White" BackgroundColor="Gray" FontSize="40"/>
-            <Button Text="*" Grid.Row="1" Grid.Column="4" TextColor="White" BackgroundColor="Gray" FontSize="40"/>
-            <Button Text="-" Grid.Row="2" Grid.Column="4" TextColor="White" BackgroundColor="Gray" FontSize="40"/>
-            <Button Text="+" Grid.Row="3" Grid.Column="4" TextColor="White" BackgroundColor="Gray" FontSize="40"/>
-            <Button Text="=" Grid.Row="4" Grid.Column="4" TextColor="White" BackgroundColor="Gray" FontSize="40"/>
+            <Button Text="1" Grid.Row="0" Grid.Column="0" TextColor="White" BackgroundColor="#272727" FontSize="36"  CornerRadius="10" x:Name="uno"         Clicked="Numero"/>
+            <Button Text="2" Grid.Row="0" Grid.Column="1" TextColor="White" BackgroundColor="#272727" FontSize="36" CornerRadius="10" x:Name="dos"          Clicked="Numero"/>
+            <Button Text="3" Grid.Row="0" Grid.Column="2" TextColor="White" BackgroundColor="#272727" FontSize="36" CornerRadius="10" x:Name="tres"         Clicked="Numero"/>
+            <Button Text="4" Grid.Row="1" Grid.Column="0" TextColor="White" BackgroundColor="#272727" FontSize="36" CornerRadius="10" x:Name="cuatro"       Clicked="Numero"/>
+            <Button Text="5" Grid.Row="1" Grid.Column="1" TextColor="White" BackgroundColor="#272727" FontSize="36" CornerRadius="10" x:Name="cinco"        Clicked="Numero"/>
+            <Button Text="6" Grid.Row="1" Grid.Column="2" TextColor="White" BackgroundColor="#272727" FontSize="36" CornerRadius="10" x:Name="seis"         Clicked="Numero"/>
+            <Button Text="7" Grid.Row="2" Grid.Column="0" TextColor="White" BackgroundColor="#272727" FontSize="36" CornerRadius="10" x:Name="siete"        Clicked="Numero"/>
+            <Button Text="8" Grid.Row="2" Grid.Column="1" TextColor="White" BackgroundColor="#272727" FontSize="36" CornerRadius="10" x:Name="ocho"         Clicked="Numero"/>
+            <Button Text="9" Grid.Row="2" Grid.Column="2" TextColor="White" BackgroundColor="#272727" FontSize="36" CornerRadius="10" x:Name="nueve"        Clicked="Numero"/>
+            <Button Text="0" Grid.Row="3" Grid.Column="0" TextColor="White" BackgroundColor="#272727" FontSize="36" CornerRadius="10" x:Name="cero"         Clicked="Numero"/>
+            <Button Text="00" Grid.Row="3" Grid.Column="1" TextColor="White" BackgroundColor="#272727" FontSize="36" CornerRadius="10" x:Name="cerocero"    Clicked="Numero"/>
+            <Button Text="." Grid.Row="3" Grid.Column="2" TextColor="White" BackgroundColor="#272727" FontSize="36" CornerRadius="10" x:Name="punto"        Clicked="Numero"/>
+            <Button Text="/" Grid.Row="0" Grid.Column="3" TextColor="White" BackgroundColor="Gray" FontSize="40" CornerRadius="10" x:Name="division"        Clicked="Numero"/>
+            <Button Text="*" Grid.Row="1" Grid.Column="3" TextColor="White" BackgroundColor="Gray" FontSize="40" CornerRadius="10" x:Name="multiplicacion"  Clicked="Numero"/>
+            <Button Text="-" Grid.Row="2" Grid.Column="3" TextColor="White" BackgroundColor="Gray" FontSize="40" CornerRadius="10" x:Name="resta"           Clicked="Numero"/>
+            <Button Text="+" Grid.Row="3" Grid.Column="3" TextColor="White" BackgroundColor="Gray" FontSize="40" CornerRadius="10" x:Name="suma"            Clicked="Numero"/>
+            <Button Text="AC" Grid.Row="4" Grid.Column="2" TextColor="White" BackgroundColor="Gray" FontSize="40" CornerRadius="10" x:Name="borrar"         Clicked="Numero" Grid.ColumnSpan="2"/>
+            <Button Text="=" Grid.Row="4" Grid.Column="3" TextColor="White" BackgroundColor="Gray" FontSize="40" CornerRadius="10" x:Name="igual"           Clicked="Numero" Grid.ColumnSpan="2"/>
 
         </Grid>
     </StackLayout>
